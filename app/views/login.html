@@ -1,0 +1,125 @@
+<div>
+	<div class="loginImage">
+		<div class="container" style="padding-top:170px">
+			<div class="row text-center">
+				<div class="col-md-6 col-md-offset-3" style="color:white;font-size:2.2em;background-color:black;opacity:0.8">
+					<span>
+							<p>Discount in my shop</p>
+							<p>The best way to get the best deal in Dublin</p>
+					</span>
+				</div>
+			</div>
+			<br />
+			<div class="row text-center">
+				<div class="col-md-6 col-md-offset-3">
+					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#signInModal">Sign In</button>
+					<button type="button" class="btn btn-defautl btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-4 well">
+		    <h3>Free</h3>
+		    <br />
+		    <div>
+		   	 <img src="../images/euro.svg" style="width:75px;height:75px" />
+		   	</div>
+		    <p style="padding:15px">
+		      You do not take any risk as the service is free of charge and will help you to find your prospect
+		    </p>
+		  </div>
+		  <div class="col-md-4 well">
+		    <h3>Targeted customer</h3>
+		    <br />
+		    <div>
+		    	<img src="../images/target.svg" style="width:75px;height:75px" />
+		    </div>
+		    <p style="padding:15px">
+		     Only target customer close enough from your shop who are interested in what your are selling
+		    </p>
+		  </div>
+		  <div class="col-md-4 well">
+		    <h3>Customisable</h3>
+		    <br />
+		    <div>
+		    	<img src="../images/settings.svg" style="width:75px;height:75px" />
+		    </div>
+		    <p style="padding:15px">Customize which products, your target range, your opening hours</p>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+      </div>
+      <div class="modal-body">
+       	<form class="form-horizontal">
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+				  <input type="email" ng-model='email' class="form-control" id="inputEmail3" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				<div class="col-sm-10">
+				  <input type="password" ng-model='password' class="form-control" id="inputPassword3" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group text-center">
+				<label class="label label-danger">{{loginError}}</label>
+			</div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"  ng-click="signin()">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+       	<form class="form-horizontal">
+       		<div class="form-group">
+				    <label for="inputName" class="col-sm-2 control-label">Name</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" ng-model='name' id="inputName" placeholder="Name">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+				    <div class="col-sm-10">
+				      <input type="email" class="form-control" ng-model='email' id="inputEmail" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+				    <div class="col-sm-10">
+				      <input type="password" class="form-control" ng-model='password' id="inputPassword" placeholder="Password">
+				    </div>
+				  </div>
+				</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="signup()">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>

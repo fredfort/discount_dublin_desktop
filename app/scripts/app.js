@@ -45,7 +45,12 @@ angular
       .state('main.dashboard',{
         url:'dashboard',
         templateUrl: 'views/dashboard.html',
-        controller: 'DashboardCtrl'
+        controller: 'DashboardCtrl',
+        resolve:{
+          transactions:['API', function(API){
+            return API.getTransactions();
+          }]
+        }
       })
       .state('main.configuration', {
         url: 'configuration',
@@ -66,7 +71,7 @@ angular
         url: 'transactions',
         templateUrl: 'views/transactions.html',
         controller: 'TransactionsCtrl',
-         resolve:{
+        resolve:{
           transactions:['API', function(API){
             return API.getTransactions();
           }]

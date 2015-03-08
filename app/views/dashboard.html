@@ -2,26 +2,65 @@
   <h1>Discount in my shop {{data}}</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure tp help you.
+    <!-- Always a pleasure tp help you. -->
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing text-center">
-  <div class="col-md-4">
-    <h4>Free</h4>
-    <p>
-      You do not take any risk as the service is free of charge and will help you to find your prospect
-    </p>
-  </div>
-  <div class="col-md-4">
-    <h4>Targeted customer</h4>
-    <p>
-     Only target customer close enough from your shop who are interested in what your are selling
-    </p>
-  </div>
-  <div class="col-md-4">
-    <h4>Customisable</h4>
-    <p>Customize which products, your target range, your opening hours</p>
+  <div class="row marketing text-center">
+    <div class="col-md-4">
+      <div class="panel"  ng-class="{'panel-primary':!product.toRemove, 'panel-danger':product.toRemove}">
+        <div class="panel-heading">
+          <h3 class="panel-title">Configuration</h3>
+        </div>
+        <div class="panel-body">
+          <div ng-if="user.reach && user.latitude && user.longitude">
+            Your configuration has been well set up!
+            <span class="glyphicon glyphicon-ok"></span><br/><br/>
+            <a ui-sref="main.configuration" class="btn btn-sm btn-success">Update your configuration</a>
+          </div>
+          <div ng-if="!user.reach || !user.latitude || |user.longitude">
+            Your configuration hasn't been fully set up yet!
+            <span class="glyphicon glyphicon-remove"></span><br/><br/>
+            <a ui-sref="main.configuration" class="btn btn-sm btn-success">Set up your configuration</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel" ng-class="{'panel-primary':!product.toRemove, 'panel-danger':product.toRemove}">
+        <div class="panel-heading">
+          <h3 class="panel-title">Products</h3>
+        </div>
+        <div class="panel-body">
+           <div ng-if="user.products.length > 0">
+              You have added {{user.products.length}} products!
+              <span class="glyphicon glyphicon-ok"></span><br/><br/>
+              <a ui-sref="main.products" class="btn btn-sm btn-success">Add other products!</a>
+            </div>
+           <div ng-if="!user.products || user.products.length === 0">
+              You haven't added any product yet!
+              <span class="glyphicon glyphicon-remove"></span><br/><br/>
+              <a ui-sref="main.products" class="btn btn-sm btn-success">Add your first product!</a>
+            </div>         
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel"  ng-class="{'panel-primary':!product.toRemove, 'panel-danger':product.toRemove}">
+        <div class="panel-heading">
+          <h3 class="panel-title">Ads</h3>
+        </div>
+        <div class="panel-body">
+          <div ng-if="transactions.length > 0">
+            Already {{transactions.length}} of your ads has been seen!
+            <span class="glyphicon glyphicon-ok"></span><br/><br/>
+            <a ui-sref="main.transactions" class="btn btn-sm btn-success">See more ads!</a>
+          </div>
+          <div ng-if="!transactions || transactions.length === 0">
+            None of your ads has been seen yet!
+            <span class="glyphicon glyphicon-remove"></span><br/><br/>
+            <a ui-sref="main.transactions" class="btn btn-sm btn-success">See more ads!</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

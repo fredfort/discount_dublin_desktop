@@ -9,6 +9,7 @@ angular.module('discountdublin')
       var randomId = Math.floor((Math.random() * 1000000)+1);
   		$scope.user.products.push({name:'',state:randomId, active:true,quantity:1,description:''});
       $location.hash(randomId);
+      //window.socket.emit('transaction','hey');
 
   	};
 

@@ -1,5 +1,23 @@
 <div>
-	<div ng-repeat='transaction in transactions'>
-		{{transaction.customer}} - {{transaction.date | date:'medium'}}
+	<h2>Last transactions</h2>
+	<div ng-repeat='transaction in transactions | limitTo:10' class="row" style="margin-bottom:15px">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="panel" id="{{product.state}}" ng-class="{'panel-primary':!product.toRemove, 'panel-danger':product.toRemove}">
+		  	<div class="panel-heading">
+		  		<h3 class="panel-title"><span class="glyphicon glyphicon-time"></span> {{transaction.date | date:'hh:mm  dd/MM/yyyy'}}</h3>
+		  	</div>
+				<div class="panel-body">
+					<div class="col-sm-6">
+						<b>{{transaction.customer}}</b>
+					</div>
+					<div class="col-sm-6">
+						This customer was interested in this category
+						<ul>
+							<li ng-repeat="category in transaction.categories">{{category}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('discountdublin')
-.controller('DashboardCtrl', function ($scope) { 
-	
-});
+.controller('DashboardCtrl',['$scope','transactions', function ($scope,transactions) { 
+	$scope.transactions = transactions.data;
+}]);
 

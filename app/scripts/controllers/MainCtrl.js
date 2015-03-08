@@ -9,5 +9,10 @@ angular.module('discountdublin')
   		$state.go('login');
   		$scope.user = User.clear();
   	}
+
+  	/*window.socket = io.connect('http://localhost:3001/');
+  	window.socket.on('transaction', function(msg){
+        alert(msg);
+     });*/
    
   }]);

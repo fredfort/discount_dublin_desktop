@@ -8594,23 +8594,18 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 55, main.scss */
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
 
 /* Supporting marketing content */
-/* line 62, main.scss */
+/* line 58, main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 65, main.scss */
+/* line 61, main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
-/* line 71, main.scss */
+/* line 67, main.scss */
 .loginImage {
   background-image: url("../../images/dublin.jpg");
   background-size: cover;
@@ -8618,35 +8613,35 @@ body {
   height: 500px;
 }
 
-/* line 78, main.scss */
+/* line 74, main.scss */
 .tabHeader {
   padding: 5px;
   font-weight: bold;
   border: 1px lightgray solid;
 }
 
-/* line 83, main.scss */
+/* line 79, main.scss */
 .tabRow {
   padding: 5px;
   border: 1px lightgray solid;
 }
 
-/* line 88, main.scss */
+/* line 84, main.scss */
 #map {
   height: 360px;
 }
 
-/* line 90, main.scss */
+/* line 86, main.scss */
 #BC .slider-selection {
   background: #8283FF;
 }
 
-/* line 93, main.scss */
+/* line 89, main.scss */
 #BC .slider-handle {
   border-bottom-color: blue;
 }
 
-/* line 96, main.scss */
+/* line 92, main.scss */
 #R, #G, #B {
   width: 300px;
 }

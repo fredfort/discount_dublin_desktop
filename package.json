@@ -2,7 +2,8 @@
   "name": "economieresiliontest",
   "version": "0.0.0",
   "dependencies": {
-    "angular-md5": "^0.1.7"
+    "angular-md5": "^0.1.7",
+    "karma": "^0.12.31"
   },
   "repository": {},
   "devDependencies": {

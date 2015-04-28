@@ -49,12 +49,11 @@
 						<div class="form-group">
 							<label for='productCategory' class='col-sm-2 control-label'>Category</label>
 							<div class="col-sm-4">
-								<select ng-model="product.category" ng-options='category._id as category.typeP for category in categories track by category._id' class="form-control">
-								<option value="">Select a product</option>
+								<select ng-model="product.category" class="form-control">
+									<option ng-selected="product.category === category._id" ng-repeat="category in categories" value="{{category._id}}">
+										{{category.typeP}}
+									</option>
 								</select>
-							</div>
-							<div class="col-sm-6">
-							{{product.category}}
 							</div>
 						</div>
 					</form>

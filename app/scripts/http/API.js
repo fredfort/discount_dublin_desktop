@@ -2,6 +2,7 @@ angular.module('discountdublin')
 
 .factory('API',['$http','md5',function($http,md5){
 	var nodeAPI = 'http://localhost:3000/';
+	//var nodeAPI = 'http://default-environment-tjdrvapm26.elasticbeanstalk.com/';
 	var baseURL = nodeAPI;
 	var user = null;
 
@@ -12,6 +13,10 @@ angular.module('discountdublin')
 
 		getTransactions :function(){
 			return $http.get(baseURL+'transactions');
+		},
+
+		countTransactions :function(){
+			return $http.get(baseURL+'transactions/count');
 		},
 
 		login : function(loginInformation){

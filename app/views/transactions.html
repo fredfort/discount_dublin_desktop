@@ -1,5 +1,5 @@
 <div>
-	<h2>Last transactions</h2>
+	<h2>Last 10 transactions</h2>
 	<div ng-repeat='transaction in transactions | limitTo:10' class="row" style="margin-bottom:15px">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel" id="{{product.state}}" ng-class="{'panel-primary':!product.toRemove, 'panel-danger':product.toRemove}">

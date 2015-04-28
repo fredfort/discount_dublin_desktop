@@ -8646,4 +8646,24 @@ body {
   width: 300px;
 }
 
+/* line 96, main.scss */
+.mainTitle {
+  color: white;
+  font-size: 2.4em;
+  background-color: black;
+  opacity: 0.8;
+}
+
+/* line 103, main.scss */
+.menuItem {
+  height: 300px;
+  background-color: whitesmoke;
+  padding: 15px;
+  border: 1px solid lightgray;
+}
+/* line 108, main.scss */
+.menuItem p {
+  font-size: 1.4em;
+}
+
 /*# sourceMappingURL=main.css.map */

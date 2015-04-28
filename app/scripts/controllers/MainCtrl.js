@@ -10,9 +10,12 @@ angular.module('discountdublin')
   		$scope.user = User.clear();
   	}
 
-  	/*window.socket = io.connect('http://localhost:3001/');
-  	window.socket.on('transaction', function(msg){
+  	/*var socket = io('http://localhost:3000/');
+
+    socket.emit('newTransaction');
+
+  	socket.on('talk', function(msg){
         alert(msg);
-     });*/
-   
+     });
+   */
   }]);

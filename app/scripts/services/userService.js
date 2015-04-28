@@ -8,10 +8,16 @@ angular.module('discountdublin')
 			localStorage.user = JSON.stringify(user);
 		},
 		getUser: function(){
-			return this.user || JSON.parse(localStorage.user) || {};
+			if(this.user){
+				return this.user;
+			}else if(localStorage.user){
+				return  JSON.parse(localStorage.user);
+			}else{
+				return {};
+			}
 		},
 		clear: function(){
-			localStorage.user = null;
+			localStorage.clear();
 			return null;
 		}
 	}

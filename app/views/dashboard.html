@@ -1,8 +1,9 @@
-<div class="jumbotron">
-  <h1>Discount in my shop {{data}}</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+<div class="text-center">
+  <h1>Discount in my shop</h1>
+  <p class="well">
+    <!-- <img src="images/yeoman.png" alt="I'm Yeoman"><br> -->
     <!-- Always a pleasure tp help you. -->
+    Welcome  {{user.name}}, Glad to have you here. You can have below an overlook of all your activities.
   </p>
   <div class="row marketing text-center">
     <div class="col-md-4">
@@ -16,7 +17,7 @@
             <span class="glyphicon glyphicon-ok"></span><br/><br/>
             <a ui-sref="main.configuration" class="btn btn-sm btn-success">Update your configuration</a>
           </div>
-          <div ng-if="!user.reach || !user.latitude || |user.longitude">
+          <div ng-if="!user.reach || !user.latitude || !user.longitude">
             Your configuration hasn't been fully set up yet!
             <span class="glyphicon glyphicon-remove"></span><br/><br/>
             <a ui-sref="main.configuration" class="btn btn-sm btn-success">Set up your configuration</a>
@@ -49,12 +50,12 @@
           <h3 class="panel-title">Ads</h3>
         </div>
         <div class="panel-body">
-          <div ng-if="transactions.length > 0">
-            Already {{transactions.length}} of your ads has been seen!
+          <div ng-if="nbtransactions > 0">
+            Already {{nbtransactions}} of your ads has been sent!
             <span class="glyphicon glyphicon-ok"></span><br/><br/>
             <a ui-sref="main.transactions" class="btn btn-sm btn-success">See more ads!</a>
           </div>
-          <div ng-if="!transactions || transactions.length === 0">
+          <div ng-if="!nbtransactions || nbtransactions === 0">
             None of your ads has been seen yet!
             <span class="glyphicon glyphicon-remove"></span><br/><br/>
             <a ui-sref="main.transactions" class="btn btn-sm btn-success">See more ads!</a>

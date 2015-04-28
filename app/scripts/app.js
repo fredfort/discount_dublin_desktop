@@ -47,15 +47,20 @@ angular
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl',
         resolve:{
-          transactions:['API', function(API){
-            return API.getTransactions();
+          nbtransactions:['API', function(API){
+            return API.countTransactions();
           }]
         }
       })
       .state('main.configuration', {
         url: 'configuration',
         templateUrl: 'views/configuration.html',
-        controller: 'ConfigurationsCtrl'
+        controller: 'ConfigurationsCtrl',
+         resolve:{
+          categories:['API', function(API){
+            return API.getCategories();
+          }]
+        }
       })
       .state('main.products', {
         url: 'products',

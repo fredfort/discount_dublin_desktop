@@ -1,10 +1,13 @@
 <div class="text-center">
   <h1>Discount in my shop</h1>
-  <p class="well">
-    <!-- <img src="images/yeoman.png" alt="I'm Yeoman"><br> -->
-    <!-- Always a pleasure tp help you. -->
-    Welcome  {{user.name}}, Glad to have you here. You can have below an overlook of all your activities.
-  </p>
+  <br />
+  <div class="row">
+    <div class="col-md-offset-1 col-md-10">
+      <p class="well">
+        Welcome  {{user.name}}, Glad to have you here. You can have below an overlook of all your activities.
+      </p>
+    </div>
+  </div>
   <div class="row marketing text-center">
     <div class="col-md-4">
       <div class="panel"  ng-class="{'panel-primary':!product.toRemove, 'panel-danger':product.toRemove}">
@@ -13,7 +16,7 @@
         </div>
         <div class="panel-body">
           <div ng-if="user.reach && user.latitude && user.longitude">
-            Your configuration has been well set up!
+            Your configuration has been well set up
             <span class="glyphicon glyphicon-ok"></span><br/><br/>
             <a ui-sref="main.configuration" class="btn btn-sm btn-success">Update your configuration</a>
           </div>
@@ -32,9 +35,14 @@
         </div>
         <div class="panel-body">
            <div ng-if="user.products.length > 0">
-              You have added {{user.products.length}} products!
+              You already have added {{user.products.length}} products
+             <!--  <ul class="text-left">
+                <li ng-repeat="product in user.products | limitTo:5">
+                  {{product.name}} <span class="glyphicon pull-right" ng-class="{'glyphicon-ok':product.active, 'glyphicon-remove':!product.active}"></span>
+                </li>
+              </ul> -->
               <span class="glyphicon glyphicon-ok"></span><br/><br/>
-              <a ui-sref="main.products" class="btn btn-sm btn-success">Add other products!</a>
+              <a ui-sref="main.products" class="btn btn-sm btn-success">Add other products</a>
             </div>
            <div ng-if="!user.products || user.products.length === 0">
               You haven't added any product yet!

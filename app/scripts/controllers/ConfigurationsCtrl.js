@@ -22,12 +22,12 @@ angular.module('discountdublin')
 
 		var myIcon = L.icon({
 		    iconUrl: 'images/marker-icon.png',
-		    iconRetinaUrl: 'images/marker-icon@2x.png',
+		    //iconRetinaUrl: 'images/marker-icon@2x.png',
 		    /*iconSize: [38, 95],*/
 		    iconAnchor: [22, 32],
-		   /* popupAnchor: [-3, -76],*/
-		    shadowUrl: 'images/marker-shadow.png',
-		    shadowRetinaUrl: 'images/marker-shadow.png',
+		    popupAnchor: [-3, -76],
+		   // shadowUrl: 'images/marker-shadow.png',
+		    //shadowRetinaUrl: 'images/marker-shadow.png',
 		    /*shadowSize: [68, 95],
 		    shadowAnchor: [22, 94]*/
 		});

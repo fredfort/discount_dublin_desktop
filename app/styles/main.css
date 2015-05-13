@@ -8538,7 +8538,65 @@ button.close {
     display: none !important;
   }
 }
-/* line 6, main.scss */
+/*PADDING*/
+/* line 3, _utils.scss */
+.padding15 {
+  padding: 15px;
+}
+
+/* line 7, _utils.scss */
+.padding25 {
+  padding: 25px;
+}
+
+/* line 10, _utils.scss */
+.margin-top15 {
+  margin-top: 15px;
+}
+
+/* line 14, _utils.scss */
+.margin-bottom15 {
+  margin-bottom15: 15px;
+}
+
+/*FONT SIZE*/
+/* line 19, _utils.scss */
+.font_size1-1 {
+  font-size: 1.1em;
+}
+
+/* line 23, _utils.scss */
+.font_size1-2 {
+  font-size: 1.2em;
+}
+
+/* line 27, _utils.scss */
+.font_size1-3 {
+  font-size: 1.3em;
+}
+
+/* line 31, _utils.scss */
+.font_size1-6 {
+  font-size: 1.6em;
+}
+
+/* line 35, _utils.scss */
+.font_size2-1 {
+  font-size: 2.1em;
+}
+
+/*BORDER*/
+/* line 40, _utils.scss */
+.borderTop {
+  border-top: solid lightgray 1px;
+}
+
+/* line 44, _utils.scss */
+.borderBottom {
+  border-bottom: solid lightgray 1px;
+}
+
+/* line 7, main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -8546,13 +8604,13 @@ button.close {
   padding: 0.2em 0;
 }
 
-/* line 13, main.scss */
+/* line 14, main.scss */
 body {
   padding: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 18, main.scss */
+/* line 19, main.scss */
 .header,
 .marketing,
 .footer {
@@ -8561,13 +8619,13 @@ body {
 }
 
 /* Custom page header */
-/* line 26, main.scss */
+/* line 27, main.scss */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 31, main.scss */
+/* line 32, main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -8576,36 +8634,36 @@ body {
 }
 
 /* Custom page footer */
-/* line 40, main.scss */
+/* line 41, main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 46, main.scss */
+/* line 47, main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 51, main.scss */
+/* line 52, main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
 /* Supporting marketing content */
-/* line 58, main.scss */
+/* line 59, main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 61, main.scss */
+/* line 62, main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
-/* line 67, main.scss */
+/* line 68, main.scss */
 .loginImage {
   background-image: url("../../images/dublin.jpg");
   background-size: cover;
@@ -8613,40 +8671,40 @@ body {
   height: 500px;
 }
 
-/* line 74, main.scss */
+/* line 75, main.scss */
 .tabHeader {
   padding: 5px;
   font-weight: bold;
   border: 1px lightgray solid;
 }
 
-/* line 79, main.scss */
+/* line 80, main.scss */
 .tabRow {
   padding: 5px;
   border: 1px lightgray solid;
 }
 
-/* line 84, main.scss */
+/* line 85, main.scss */
 #map {
   height: 360px;
 }
 
-/* line 86, main.scss */
+/* line 87, main.scss */
 #BC .slider-selection {
   background: #8283FF;
 }
 
-/* line 89, main.scss */
+/* line 90, main.scss */
 #BC .slider-handle {
   border-bottom-color: blue;
 }
 
-/* line 92, main.scss */
+/* line 93, main.scss */
 #R, #G, #B {
   width: 300px;
 }
 
-/* line 96, main.scss */
+/* line 97, main.scss */
 .mainTitle {
   color: white;
   font-size: 2.4em;
@@ -8654,16 +8712,41 @@ body {
   opacity: 0.8;
 }
 
-/* line 103, main.scss */
+/* line 104, main.scss */
 .menuItem {
-  height: 300px;
+  height: 350px;
   background-color: whitesmoke;
-  padding: 15px;
-  border: 1px solid lightgray;
+  padding: 50px;
+  border-top: lightgray 1px solid;
 }
-/* line 108, main.scss */
-.menuItem p {
+/* line 111, main.scss */
+.menuItem div p {
   font-size: 1.4em;
+}
+
+/* line 117, main.scss */
+.shoppingBackground {
+  background: url("../images/shopping.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+/* line 124, main.scss */
+.merchantBackground {
+  background: url("../images/merchants.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+/* line 131, main.scss */
+.intro {
+  margin: 75px;
+}
+/* line 133, main.scss */
+.intro p {
+  font-size: 1.6em;
 }
 
 /*# sourceMappingURL=main.css.map */

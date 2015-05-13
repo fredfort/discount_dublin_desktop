@@ -1,7 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-// bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
+@import "_utils.scss"
 
 .browsehappy {
   margin: 0.2em 0; 
@@ -101,12 +100,35 @@ body {
 }
 
 .menuItem{
-  height:300px;
+  height:350px;
   background-color:whitesmoke;
-  padding:15px;
-  border:1px solid lightgray;
-  p{
-     font-size:1.4em;
+  padding:50px;
+  border-top: lightgray 1px solid;
+
+  div{
+    p{
+       font-size:1.4em;
+    }
   }
 }
 
+.shoppingBackground{
+  background: url('../images/shopping.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.merchantBackground{
+  background: url('../images/merchants.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.intro{
+  margin:75px;
+  p{
+    font-size:1.6em;
+  }
+}

@@ -8596,74 +8596,27 @@ button.close {
   border-bottom: solid lightgray 1px;
 }
 
-/* line 7, main.scss */
+/* line 5, main.scss */
 .browsehappy {
-  margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
 
-/* line 14, main.scss */
-body {
-  padding: 0;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 19, main.scss */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-/* line 27, main.scss */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-  /* Make the masthead heading the same height as the navigation */
-}
-/* line 32, main.scss */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
 /* Custom page footer */
-/* line 41, main.scss */
+/* line 12, main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 47, main.scss */
+/* line 18, main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-/* line 52, main.scss */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* Supporting marketing content */
-/* line 59, main.scss */
-.marketing {
-  margin: 40px 0;
-}
-/* line 62, main.scss */
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* line 68, main.scss */
+/* line 22, main.scss */
 .loginImage {
   background-image: url("../../images/dublin.jpg");
   background-size: cover;
@@ -8671,40 +8624,40 @@ body {
   height: 500px;
 }
 
-/* line 75, main.scss */
+/* line 29, main.scss */
 .tabHeader {
   padding: 5px;
   font-weight: bold;
   border: 1px lightgray solid;
 }
 
-/* line 80, main.scss */
+/* line 34, main.scss */
 .tabRow {
   padding: 5px;
   border: 1px lightgray solid;
 }
 
-/* line 85, main.scss */
+/* line 39, main.scss */
 #map {
   height: 360px;
 }
 
-/* line 87, main.scss */
+/* line 41, main.scss */
 #BC .slider-selection {
   background: #8283FF;
 }
 
-/* line 90, main.scss */
+/* line 44, main.scss */
 #BC .slider-handle {
   border-bottom-color: blue;
 }
 
-/* line 93, main.scss */
+/* line 47, main.scss */
 #R, #G, #B {
   width: 300px;
 }
 
-/* line 97, main.scss */
+/* line 51, main.scss */
 .mainTitle {
   color: white;
   font-size: 2.4em;
@@ -8712,19 +8665,18 @@ body {
   opacity: 0.8;
 }
 
-/* line 104, main.scss */
+/* line 58, main.scss */
 .menuItem {
-  height: 350px;
   background-color: whitesmoke;
   padding: 50px;
   border-top: lightgray 1px solid;
 }
-/* line 111, main.scss */
+/* line 64, main.scss */
 .menuItem div p {
   font-size: 1.4em;
 }
 
-/* line 117, main.scss */
+/* line 70, main.scss */
 .shoppingBackground {
   background: url("../images/shopping.jpg");
   background-size: cover;
@@ -8732,7 +8684,7 @@ body {
   height: 350px;
 }
 
-/* line 124, main.scss */
+/* line 77, main.scss */
 .merchantBackground {
   background: url("../images/merchants.jpg");
   background-size: cover;
@@ -8740,11 +8692,11 @@ body {
   height: 350px;
 }
 
-/* line 131, main.scss */
+/* line 84, main.scss */
 .intro {
   margin: 75px;
 }
-/* line 133, main.scss */
+/* line 86, main.scss */
 .intro p {
   font-size: 1.6em;
 }

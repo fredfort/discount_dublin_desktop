@@ -385,17 +385,20 @@ module.exports = function (grunt) {
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
+      options: {
+        limit:4
+      },
       server: [
         'compass:server'
       ],
       test: [
         'compass'
-      ],
-      dist: [
-        'compass:dist',
-        'imagemin',
-        'svgmin'
       ]
+      // dist: [
+      //   'compass:dist',
+      //   'imagemin',
+      //   'svgmin'
+      // ]
     },
 
     // Test settings
@@ -441,7 +444,10 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
+    'compass:dist',
+    'imagemin',
+    'svgmin',
+    //'concurrent:dist',
     'autoprefixer',
     'concat',
     'ngAnnotate',
